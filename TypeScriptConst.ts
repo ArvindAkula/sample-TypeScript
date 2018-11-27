@@ -11,7 +11,7 @@ class Tailor {
     dimensions: Measurement;
     name: string;
 
-    constructor(name:string,dimensions:Measurement){
+    constructor(name?:string,dimensions?:Measurement){
      this.name=name;
      this.dimensions=dimensions;
 
@@ -46,3 +46,5 @@ let cust1 = new Tailor("Test Tailor",{
 // }
 cust1.generateBill(cust1.dimensions.isShirt);
 cust1.stich();
+
+let cust2 = new Tailor();
